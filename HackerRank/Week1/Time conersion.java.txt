@@ -1,0 +1,14 @@
+public static String timeConversion(String s) {
+    // Write your code here
+    String format=s.substring(s.length()-2);
+    int hour=Integer.parseInt(s.substring(0,2));
+    String minsec=s.substring(2,8);
+    
+    if(format.equals("AM")&&hour==12){
+        hour=0;
+    }
+    else if(format.equals("PM") && hour!=12){
+        hour+=12;
+    }
+     return String.format("%02d%s\n",hour,minsec);
+    }

@@ -1,0 +1,14 @@
+public static List<Integer> matchingStrings(List<String> strings, List<String> queries) {
+    // Write your code heres
+      List <Integer>re=new ArrayList<>();
+      for(String i:queries){
+        int c=0;
+        for(String j:strings){
+            if(i.equals(j)){
+                c++;
+            }
+        }
+        re.add(c);
+      }
+      return re;
+    }
