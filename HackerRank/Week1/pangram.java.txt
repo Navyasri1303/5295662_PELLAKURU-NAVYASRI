@@ -1,0 +1,10 @@
+public static String pangrams(String s) {
+    // Write your code here
+    s=s.toLowerCase();
+    for(char ch='a';ch<='z';ch++){
+        if(s.indexOf(ch)==-1){
+            return "not pangram";
+        }
+    }
+      return "pangram";
+    }
