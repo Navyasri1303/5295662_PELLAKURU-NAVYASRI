@@ -1,0 +1,14 @@
+    public static int sockMerchant(int n, List<Integer> ar) {
+    // Write your code here
+    Map<Integer,Integer> a=new HashMap<>();
+    int p=0;
+    for(int i:ar){
+        a.put(i,a.getOrDefault(i,0)+1);
+    }
+    for(int count:a.values()){
+        p+=count/2;
+    }
+    return p;
+    }
+
+}
